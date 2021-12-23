@@ -1,0 +1,47 @@
+<idea-plugin>
+    <id>com.xams.skeleton.intellij.plugin</id>
+    <name>Skeleton Sample</name>
+    <depends>com.intellij.modules.platform</depends>
+    <description>
+        <![CDATA[
+      Hello World com.xams.skeleton.intellij.plugin description!
+    ]]>
+    </description>
+    <change-notes>
+        <![CDATA[
+      <ul>
+        <li><b>2.0.0</b>  todo......</li>
+        <li><b>1.1</b>  todo......</li>
+        <li><b>1.0</b> todo......</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+
+    <actions>
+        <action id="com.xams.intellij.plugin.skeleton.action.HelloWorldAction"
+                class="com.xams.intellij.plugin.skeleton.action.HelloWorldAction"
+                text="HelloWorldGroovyAction" description="Hello World Groovy!"
+                icon="SdkIcons.Sdk_default_icon"
+        >
+            <add-to-group group-id="HelpMenu" anchor="last"/>
+        </action>
+        <group id="com.xams.intellij.plugin.skeleton.action.group.CustomGroup"
+               class="com.xams.intellij.plugin.skeleton.action.group.CustomGroup"
+               text="skeleton-intellij-plugin" description="skeleton-intellij-plugin"
+               popup="true"
+        >
+            <add-to-group group-id="HelpMenu" anchor="last"/>
+        </group>
+        <action id="com.xams.intellij.plugin.skeleton.action.InputDialogAction"
+                class="com.xams.intellij.plugin.skeleton.action.InputDialogAction"
+                text="InputDialogAction" description="InputDialogAction">
+            <add-to-group group-id="HelpMenu" anchor="last"/>
+        </action>
+        <action id="com.xams.intellij.plugin.skeleton.action.ConfirmDialogAction"
+                class="com.xams.intellij.plugin.skeleton.action.ConfirmDialogAction"
+                text="ConfirmDialogAction" description="ConfirmDialogAction">
+            <add-to-group group-id="HelpMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
